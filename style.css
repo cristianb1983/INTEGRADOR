@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-family: Arial, sans-serif;
+}
+
 @font-face {
     font-family: 'PermanentMaker';
     src: url(fuentes/PermanentMarker-Regular.ttf);
@@ -5,21 +11,18 @@
 
 
 body{
-    background-color: black;
-    background-image: url(img/el_padrino.jpeg);
+    background-image: url(img/alienRipleyDerecha.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size:100% 400%;
+    background-size: cover;
     }
     
-.logo{
+/* .logo{
     color: white;
     font-size: 28px;
     font-family:'PermanentMaker';
-    }
+    } */
 
-
-a:link,a:visited,a:hover,a:active{
+/* a:link,a:visited,a:hover,a:active{
     color: white;
     text-decoration: none;
 }
@@ -29,5 +32,79 @@ a:link,a:visited,a:hover,a:active{
     display: flex;
     justify-content: space-between;
     border-bottom:2px,
-    }
+    } */
  
+
+/* Header */
+
+
+.header {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.itemsIzquierda a {
+    margin-left: 50px;
+}
+
+.itemsDerecha a {
+    margin-right: 50px;
+}
+
+.header a:hover{
+    background-color: rgb(122, 0, 0);
+    padding: 5px 10px;
+    border-radius: 14px;
+}
+
+.suscribeteHeader {
+    background-color: rgb(122, 0, 0);
+    padding: 5px 10px;
+    border-radius: 14px;
+}
+
+/* Contenido extra y llamado a la accion */
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.contenido h1 {
+    color: white;
+    font-size: 48px;
+}
+
+.contenido p {
+    color: white;
+    width: 530px;
+    margin: 7px 0px 70px 0px;
+}
+
+.suscribiteAhora {
+    width: fit-content;
+    color: white;
+    background-color: rgb(122, 0, 0);
+    padding: 10px 100px;
+    border-radius: 14px;
+}
+
+.yaTengo {
+    margin-top: 20px;
+    width: fit-content;
+    color: white;
+    background-color: rgb(122, 0, 0);
+    padding: 10px 7 0px;
+    border-radius: 14px;
+}
