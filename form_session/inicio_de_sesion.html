@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Login</title>
+  <style>
+    @font-face {
+    font-family: 'PermanentMaker';
+    src: url(../fuentes/PermanentMarker-Regular.ttf);
+}
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      height: 100vh;
+      background-color:black;
+      font-family: Arial, sans-serif;
+    }
+    .principal{
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .login-box {
+      background:rgba(128,0, 0,0.5); 
+      color: white;
+      margin-right: 50px;
+      padding: 40px;
+      border-radius: 15px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid white;
+      background: transparent;
+      color: white;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .login-box input::placeholder {
+      color: whitesmoke;
+    }
+
+    .login-box button {
+      background: black; 
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-box button:hover {
+      background:rgba(0, 0, 0);
+    }
+    h1{
+      font-family: 'PermanentMaker';
+      color: whitesmoke;
+      font-size: 90px;
+      padding:30px;
+      display: flex;
+      text-align:justify;
+      width: auto;
+      height: 10px;
+       }
+       p{
+        color: white;
+        height: 100px;
+        padding-left: 30px;
+       }
+       header{
+    width: 90%;
+    height: 40px;
+    margin: 20px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    align-content: flex-start;
+    border: 0,0,2px,o,solid,rgba(128,0, 0,0.5);
+}
+.items {
+  font-family: sans-serif;
+width: 25%;
+display: flex;
+justify-content: space-between;
+}
+a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(122, 0, 0);
+    padding: 5px 10px;
+    border-radius: 14px;
+}
+.logo{
+  margin-left: 30px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="items">
+        <a href="../index.html">INICIO</a>
+        <a class="suscribeteHeader" href="#">SUSCRIBIRSE</a>
+      </div>
+  </header>
+ <div class="principal">
+   <div class="logo">
+  <h1>movie +</h1><br>
+  <p>Inicia sesion y disfruta de tus peliculas y series favoritas!!!</p>
+  </div>
+  <div class="login-box">
+    <h2>Iniciar Sesión</h2>
+    <form>
+      <input type="text" placeholder="Usuario" required>
+      <input type="password" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+ </div>
+ 
+</body>
+</html>
