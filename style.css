@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'PermanentMaker';
+    src: url(fuentes/PermanentMarker-Regular.ttf);
+}
+
+
+body{
+    background-color: black;
+    background-image: url(img/el_padrino.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100% 400%;
+    }
+    
+.logo{
+    color: white;
+    font-size: 28px;
+    font-family:'PermanentMaker';
+    }
+
+
+a:link,a:visited,a:hover,a:active{
+    color: white;
+    text-decoration: none;
+}
+.enlaces{
+    font-family: sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:2px,
+    }
+ 
