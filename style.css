@@ -76,6 +76,7 @@ body{
     background-color: rgb(122, 0, 0);
     padding: 10px 100px;
     border-radius: 14px;
+    text-decoration: none;
 }
 
 .yaTengo {
@@ -85,4 +86,17 @@ body{
     background-color: rgb(122, 0, 0);
     padding: 10px 70px;
     border-radius: 14px;
+    text-decoration: none;
+}
+
+.suscribiteAhora:hover {
+    background-color: rgb(122, 0, 0);
+    padding: 15px 110px;
+    border-radius: 14px;
+}
+
+.yaTengo:hover {
+    background-color: rgb(122, 0, 0);
+    padding: 15px 80px;
+    border-radius: 14px;   
 }
