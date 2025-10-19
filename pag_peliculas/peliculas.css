@@ -62,12 +62,13 @@ h2 {
     width: 350px;
     height: auto;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .poster img {
     width: 350px;
     height: auto;
+    border-radius: 14px;
 }
 
 .descripcion {
@@ -94,9 +95,7 @@ h2 {
 }
 
 .contenedorPoster .poster:hover {
-    transform: scale(1.10);
-    width: 350px;
-    height: 520px;
+    /* transform: scale(1.10); */
     border-radius: 14px;
     z-index: 2;
 }
@@ -106,14 +105,20 @@ h2 {
 
 .contenedorPoster {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: calc(3 * 350px + 2 * 20px);
     height: auto;
     gap: 20px;
+    overflow: hidden; 
+}
+
+.contenedorDelContenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
-.contenedorPoster .flechas {
+.contenedorDelContenedor .flechas {
     position: absolute;
     display: flex;
     justify-content: space-between;
