@@ -7,7 +7,7 @@ function validarFormulario(){
     const expRegC =  /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
 
 
-    if(inputUsuario.value.trim() === "" && !expRegU.test(inputUsuario.value)){
+    if(inputUsuario.value === "" && !expRegU.test(inputUsuario.value)){
         mensajeError.textContent = 'Debe ingresar un usuario.';
         inputUsuario.style.borderBottom = '2px solid red'
         
@@ -15,7 +15,7 @@ function validarFormulario(){
     } else{
          inputUsuario.style.borderBottom = '2px solid white';
     }
-    if (!expRegC.test(inputContraseña.value)) {
+    if (inputContraseña.value === "" && !expRegC.test(inputContraseña.value)) {
         inputContraseña.style.borderBottom = '2px solid red'
         
     } else {
