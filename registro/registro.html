@@ -115,17 +115,19 @@
         puede cambiarte el día… o la vida. Suscribite y empezá a explorar.
       </p>
     </div>
-    <form>
+    <form action="" name="registro" novalidate onsubmit="return validarFormulario()">
       <div class="login-box">
         <h2>Completar</h2>
-        <input type="email" name="email" placeholder="email" required>
-        <input type="text" name="usuario" placeholder="usuario" required>
-        <input type="number" name="" placeholder="telefono"required >
+        <input type="email" name="email" placeholder="email">
+        <input type="text" name="usuario" placeholder="usuario">
+        <input type="number" name="telefono" placeholder="telefono">
         <input type="number" name="numeroTarjeta" placeholder="tarjeta">
-        <input type="number" name="cod_seguridad" placeholder="codigo de seguridad">
+        <input type="number" name="codSeguridad" placeholder="codigo de seguridad">
         <button type="submit">Enviar</button>
       </div>
     </form>
   </div>
+
+  <script src="./formulario.js"></script>
   </body>
 </html>

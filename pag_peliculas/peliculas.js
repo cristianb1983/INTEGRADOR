@@ -67,7 +67,6 @@ let posicion = 1;
 //Traemos los posters con document y asignamos el arreglo a posters
 const posters = document.getElementsByClassName('poster');
 
-
 function siguiente(){
     for(let i = 0; i < 3; i++){
         //Asigna
@@ -90,7 +89,7 @@ function siguiente(){
     }
 }
 
-let posicionAnterior = 5;
+let posicionAnterior = 5
 function anterior(){
         for(let i = 0; i < 3; i++){
         //Asigna

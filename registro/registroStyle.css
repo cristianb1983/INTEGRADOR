@@ -125,3 +125,10 @@ form button:hover {
 p{
     color: white;
 }
+
+
+.sccJS {
+    display: flex;
+    justify-content: start;
+    color: red;
+}
