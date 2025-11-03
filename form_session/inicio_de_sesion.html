@@ -6,8 +6,6 @@
   <link rel="stylesheet" href="formStyle.css">
 </head>
 <body>
-
-  <!-- header cabecera -->
   <header>
     <div class="header">
       <div class="itemsIzquierda">
@@ -36,14 +34,16 @@
     </div>
   
     <!-- Formulario -->
-    <form>
+    <form name="formularioLogin" onsubmit="return validarFormulario()" novalidate>
       <div class="login-box">
         <h2>Iniciar Sesión</h2>
-        <input type="text" placeholder="Usuario" required>
-        <input type="password" placeholder="Contraseña" required>
-        <button type="submit">Ingresar</button>
+        <input  type="text" name="usuario" placeholder="Usuario">
+        <input  type="password" name="contraseña" placeholder="Contraseña" >
+        <button type="submit" >Ingresar</button>
+        <p id="mensajeError" class="mensajeError"></p>
       </div>
     </form>
   </div>
+   <script src="form.js"></script>
 </body>
 </html>

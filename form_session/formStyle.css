@@ -125,3 +125,11 @@ body {
 .logo p {
     color: white;
 }
+
+.mensajeError {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+
