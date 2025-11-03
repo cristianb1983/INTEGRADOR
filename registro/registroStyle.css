@@ -58,7 +58,7 @@
 /* form */
 
 .principal {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -131,4 +131,10 @@ p{
     display: flex;
     justify-content: start;
     color: red;
+}
+.marca h1 {
+    font-family: 'PermanentMaker';
+    color: white;
+    font-size: 70px;
+    margin-bottom: 70px;       
 }
