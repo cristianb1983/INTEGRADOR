@@ -1,15 +1,10 @@
 let imagenes = [
 { 
-   src: '../img/alien.webp',
+   src: '../img/juegosDelCalamar.webp',
    titulo: 'Alien planeta tierra',
-   descripcion: `Cuando una misteriosa nave se estrella contra la Tierra, una joven y
-                un variopinto grupo de soldados tácticos hacen un fatídico hallazgo que
-                los pone cara a cara con la mayor amenaza del planeta. El equipo de
-                rescate busca supervivientes entre los restos de la colisión y se
-                topa con una forma de vida depredadora que levanta más misterios y
-                miedos de los que cabría imaginarse. Debido a esta nueva amenaza,
-                el equipo deberá luchar por sobrevivir. Lo que decidan hacer con
-                este descubrimiento podría cambiar el planeta Tierra tal y como lo conocen.`
+   descripcion: `Cientos de personas con problemas de dinero aceptan una invitación 
+                    rarísima para competir en juegos infantiles. Dentro los esperan un 
+                    tentador premio y desafíos letales.`
 },
 { 
    src: '../img/Kimetsu.webp',
