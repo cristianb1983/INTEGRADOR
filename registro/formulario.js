@@ -1,4 +1,3 @@
-//Regex
 const regEmail = RegExp(/[A-Za-z0-9.-_]{3,15}(gmail|hotmail)\.com$/)
 const regUsuario = RegExp(/[A-Z]{3,15}/i)
 const regTelefono = RegExp(/[0-9]/)
@@ -14,66 +13,86 @@ const inputCodigo = formulario['codSeguridad']
 
 let opciones
 function validarFormulario(){
+
     if(!regEmail.test(inputEmail.value)){
         inputEmail.style.borderColor = 'red'
         opciones = 'email'
         crearError(inputEmail, opciones)
+    }else{
+        removerHijos(inputEmail)
     }
 
     if(!regUsuario.test(inputUsuario.value)){
         inputUsuario.style.borderColor = 'red'
         opciones = 'usuario'
         crearError(inputUsuario, opciones)
+    }else{
+        removerHijos(inputUsuario)
     }
 
     if(!regTelefono.test(inputTelefono.value)){
         inputTelefono.style.borderColor = 'red'
         opciones = 'telefono'
         crearError(inputTelefono, opciones)
+    }else{
+        removerHijos(inputTelefono)
     } 
 
     if(!regTarjeta.test(inputTarjeta.value)){
         inputTarjeta.style.borderColor = 'red'
         opciones = 'tarjeta'
         crearError(inputTarjeta, opciones)
+    }else{
+        removerHijos(inputTarjeta)
     }
 
     if(!regcodigo.test(inputCodigo.value)){
         inputCodigo.style.borderColor = 'red'
         opciones = 'codigo'
         crearError(inputCodigo, opciones)
+    }else{
+        removerHijos(inputCodigo)
     }
     return false;
 }
 
-function crearError(inputEmail, opciones){
-    let contenedorError = document.createElement('div')
+function crearError(input, opciones){
+    evitarDuplicados(input);
     let parrafoError = document.createElement('p')
-    parrafoError.classList.add('sccJS')
-    contenedorError.appendChild(parrafoError)
+    parrafoError.classList.add('cssJs')
     switch(opciones) {
         case 'email':
             parrafoError.textContent = 'Error email incorrecto'
-            inputEmail.insertAdjacentElement('afterend', contenedorError)
             break
         case 'usuario':
             parrafoError.textContent = 'El usuario ya existe'
-            inputUsuario.insertAdjacentElement('afterend', contenedorError)
             break
         case 'telefono':
             parrafoError.textContent = 'Numero de telefono invalido'
-            inputTelefono.insertAdjacentElement('afterend', contenedorError)
             break
         case 'tarjeta':
             parrafoError.textContent = 'Numero de tarjeta invalido'
-            inputTarjeta.insertAdjacentElement('afterend', contenedorError)
             break
         case 'codigo':
             parrafoError.textContent = 'Codigo de seguridad invalido'
-            inputCodigo.insertAdjacentElement('afterend', contenedorError)
             break
     }
-
-
-    //SOLO QUEDA BORRAR PARA QUE NO SE DUPLIQUEN
+    input.insertAdjacentElement('afterend', parrafoError)
 }
+
+function evitarDuplicados(input) {
+    const siguiente = input.nextElementSibling;
+    if (siguiente.classList.contains('cssJs')) {
+        siguiente.remove();
+    }
+}
+
+function removerHijos(input){
+    const error = input.nextElementSibling;
+    if (error.classList.contains('cssJs')) {
+        input.style.borderColor = 'white'
+        error.remove();
+    }
+}
+
+
