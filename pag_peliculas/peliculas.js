@@ -1,6 +1,6 @@
 let imagenes = [
 { 
-   src: '../img/juegosDelCalamar.webp',
+   src: '../img/alien.webp',
    titulo: 'Alien planeta tierra',
    descripcion: `Cientos de personas con problemas de dinero aceptan una invitación 
                     rarísima para competir en juegos infantiles. Dentro los esperan un 
