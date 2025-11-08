@@ -1,6 +1,6 @@
 const regEmail = RegExp(/[A-Za-z0-9.-_]{3,15}(gmail|hotmail)\.com$/)
 const regUsuario = RegExp(/[A-Z]{3,15}/i)
-const regTelefono = RegExp(/[0-9]/)
+const regTelefono = RegExp(/[9]/)
 const regTarjeta = RegExp(/[0-9]{5,}/)
 const regcodigo = RegExp(/[0-9]{3}/)
 
@@ -20,6 +20,7 @@ function validarFormulario(){
         inputEmail.style.borderColor = 'red'
         opciones = 'email'
         crearError(inputEmail, opciones)
+        valido = false;
     }else{
         removerHijos(inputEmail)
     }
@@ -28,6 +29,7 @@ function validarFormulario(){
         inputUsuario.style.borderColor = 'red'
         opciones = 'usuario'
         crearError(inputUsuario, opciones)
+        valido = false;
     }else{
         removerHijos(inputUsuario)
     }
@@ -36,6 +38,7 @@ function validarFormulario(){
         inputTelefono.style.borderColor = 'red'
         opciones = 'telefono'
         crearError(inputTelefono, opciones)
+        valido = false;
     }else{
         removerHijos(inputTelefono)
     } 
@@ -44,6 +47,7 @@ function validarFormulario(){
         inputTarjeta.style.borderColor = 'red'
         opciones = 'tarjeta'
         crearError(inputTarjeta, opciones)
+        valido = false;
     }else{
         removerHijos(inputTarjeta)
     }
@@ -52,19 +56,22 @@ function validarFormulario(){
         inputCodigo.style.borderColor = 'red'
         opciones = 'codigo'
         crearError(inputCodigo, opciones)
+        valido = false;
     }else{
         removerHijos(inputCodigo)
     }
      if (valido) {
-    const usuario = inputUsuario.value.trim();
-    
-    mensajeExito.textContent = `Usuario ${usuario} creado con exito!!!`;  ;
-    mensajeExito.style.color = "white";
-    mensajeExito.style.backgroundColor = "green";
-    mensajeExito.style.padding = "10px";
-    mensajeExito.style.marginTop = "15px";
-    mensajeExito.style.textAlign = "center";
+        const usuario = inputUsuario.value.trim();
+        
+        mensajeExito.textContent = `Usuario ${usuario} creado con exito!!!`;  ;
+        mensajeExito.style.color = "white";
+        mensajeExito.style.backgroundColor = "rgb(122, 0, 0)";
+        mensajeExito.style.padding = "10px";
+        mensajeExito.style.marginTop = "15px";
+        mensajeExito.style.textAlign = "center";
+        mensajeExito.style.borderRadius = "14px"
     }
+    valido = true;
     return false;
 }
 

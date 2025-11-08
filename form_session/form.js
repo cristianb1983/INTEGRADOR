@@ -26,16 +26,18 @@ function validarFormulario(){
         removerHijos(inputContraseña)
     }
     if (valido) {
-    const usuario = inputUsuario.value.trim();
-    
-    mensajeExito.textContent = `Bienvenido ${usuario} ya puedes disfrutar tus peliculas favotitas!!!`;  ;
-    mensajeExito.style.color = "white";
-    mensajeExito.style.backgroundColor = "green";
-    mensajeExito.style.padding = "10px";
-    mensajeExito.style.marginTop = "15px";
-    mensajeExito.style.textAlign = "center";
+        const usuario = inputUsuario.value.trim();
+        
+        mensajeExito.textContent = `Bienvenido ${usuario} ya puedes disfrutar tus peliculas favotitas`;
+        mensajeExito.style.color = "white";
+        mensajeExito.style.backgroundColor = "rgb(122, 0, 0)";
+        mensajeExito.style.padding = "10px";
+        mensajeExito.style.marginTop = "15px";
+        mensajeExito.style.textAlign = "center";
+        mensajeExito.style.borderRadius = "14px"
     }
-return false;
+    valido = true
+    return false;
 
 }
 function crearError(input, opciones){
