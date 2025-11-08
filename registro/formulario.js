@@ -11,7 +11,9 @@ const inputTelefono = formulario['telefono']
 const inputTarjeta = formulario['numeroTarjeta']
 const inputCodigo = formulario['codSeguridad']
 
+let valido = true;
 let opciones
+
 function validarFormulario(){
 
     if(!regEmail.test(inputEmail.value)){
@@ -52,6 +54,16 @@ function validarFormulario(){
         crearError(inputCodigo, opciones)
     }else{
         removerHijos(inputCodigo)
+    }
+     if (valido) {
+    const usuario = inputUsuario.value.trim();
+    
+    mensajeExito.textContent = `Usuario ${usuario} creado con exito!!!`;  ;
+    mensajeExito.style.color = "white";
+    mensajeExito.style.backgroundColor = "green";
+    mensajeExito.style.padding = "10px";
+    mensajeExito.style.marginTop = "15px";
+    mensajeExito.style.textAlign = "center";
     }
     return false;
 }
