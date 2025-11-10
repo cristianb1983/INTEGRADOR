@@ -1,6 +1,6 @@
 const regEmail = RegExp(/[A-Za-z0-9.-_]{3,15}(gmail|hotmail)\.com$/)
 const regUsuario = RegExp(/[A-Z]{3,15}/i)
-const regTelefono = RegExp(/[9]/)
+const regTelefono = RegExp(/[0-9]{6,}/)
 const regTarjeta = RegExp(/[0-9]{5,}/)
 const regcodigo = RegExp(/[0-9]{3}/)
 
